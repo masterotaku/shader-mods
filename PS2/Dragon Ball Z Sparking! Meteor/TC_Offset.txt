@@ -1,0 +1,2 @@
+8x native: 470 440
+6x native: 440 410
