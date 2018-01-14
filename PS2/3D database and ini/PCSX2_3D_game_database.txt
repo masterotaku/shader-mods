@@ -60,10 +60,10 @@ Note: some background blurring has haloing that needs a shaderoverride for regex
 Note 2: needs some small fixes here and there. Nothing too important.
 
 God of War
-Note: don't bother. All geometry is within a very small depth range.
+Note: needs special convergence/separation presets with "g" key.
 
 God of War 2
-Note: don't bother. All geometry is within a very small depth range.
+Note: needs special convergence/separation presets with "g" key.
 
 Jak & Daxter
 Disable regex 2 and 3.
@@ -189,3 +189,7 @@ Interlacing: Bob tff
 Internal resolution: use a custom resolution with very high vertical resolution, at least
 almost double of what corresponds to a 16:9 resolution. The game won't be 3D otherwise.
 Note: the HUD needs dominant eye.
+
+Ys V
+Interlacing: Bob tff
+Note: most of the HUD needs to be unstereoized.
