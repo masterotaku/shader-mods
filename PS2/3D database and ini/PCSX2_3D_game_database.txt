@@ -1,10 +1,10 @@
 Castlevania: Curse of Darkness
 Disable regex 3.
-Note: needs a lot more convergence than normal.
+Note: needs a lot more convergence than normal. Use the highest convergence preset.
 
 Castlevania: Lament of Innocence
 Disable regex 3.
-Note: needs a lot more convergence than normal.
+Note: needs a lot more convergence than normal. Use the highest convergence preset.
 
 Crash Bandicoot: The Wrath of Cortex
 Interlacing: Bob tff
@@ -17,10 +17,11 @@ Dark Cloud
 Interlacing: Bob tff
 Internal resolution: use a custom resolution with very high vertical resolution, at least
 almost double of what corresponds to a 16:9 resolution. The game won't be 3D otherwise.
-Note: one wave effect in the distance needs to be disabled or not stereoized (regex 3). Needs manual fix.
+Note: one wave effect in the distance needs to be disabled or not stereoized (regex 3). Manual fix done as shader override.
 
 Dark Cloud 2
-Note: one wave effect in the distance needs to be disabled or not stereoized (regex 3). Needs manual fix.
+Note: one wave effect in the distance needs to be disabled or not stereoized (regex 3). Manual fix done as shader
+override (not enabled by default because of conflict with another game).
 Note 2: some geometry elements (not as many as Dragon Quest VIII) have clipping. Use low separation if it annoys you.
 
 Devil May Cry
@@ -28,21 +29,22 @@ Disable regex 3.
 Interlacing: Bob tff
 Internal resolution: use a custom resolution with very high vertical resolution, at least
 almost double of what corresponds to a 16:9 resolution. The game won't be 3D otherwise.
-Note: shadows, some lights and wave effects with haloing need a manual fix (regex 1 or 2).
+Note: shadows, some lights and wave effects with haloing need a manual fix (regex 1 or 2). Manual fix done as shader override to fix part of it.
 
 Dragon Ball Z Sparking! Meteor
 Disable regex 2 and 3.
 CRC Hack Level: Minimum (Debug)
 Half-pixel Offset: Special (Texture - aggressive)
-Note: some effects go out of the screen at normal convergence.
+Note: some small effects go out of the screen at normal convergence.
 
 Dragon Ball Z Budokai
 Disable regex 3.
-Note: needs override to disable a low res 2D effect in regex 3.
+Note: needs override to disable a low res 2D effect in regex 3. Manual fix done as shader override to disable it.
 
 Dragon Ball Z Infinite World
 Disable regex 3.
-Note: for perfect shadows, they need to not be stereoized in regex 2. Needs manual fix.
+Note: for perfect shadows, they need to not be stereoized in regex 2. Manual fix done as shader
+override to disable shadows (also fixed a wave effect), but not used by default.
 
 Dragon Quest V
 Disable regex 2 and 3.
@@ -50,20 +52,21 @@ Disable regex 2 and 3.
 Dragon Quest VIII
 Disable regex 3.
 Note: geometry like characters and other elements have a lot of clipping. You need to use low separation.
-Note 2: water refraction needs a manual fix in shader regex 1.
+Note 2: water refraction needs a manual fix in shader regex 1. Manual fix done as shader override. Not perfect, and not used by default.
 
 Final Fantasy X
-Note: battle background blurring has haloing that needs a shaderoverride for regex 3.
+Note: battle background blurring has haloing that needs a shaderoverride for regex 3. Manual fix done as shader override.
 
 Final Fantasy XII
 Note: some background blurring has haloing that needs a shaderoverride for regex 1.
 Note 2: needs some small fixes here and there. Nothing too important.
 
 God of War
-Note: needs special convergence/separation presets with "g" key.
+Note: needs special convergence/separation presets with "g" key. Manual fix done as shader override for orbs.
 
 God of War 2
-Note: needs special convergence/separation presets with "g" key.
+Half-pixel Offset: Special (Texture - aggressive)
+Note: needs special convergence/separation presets with "g" key. Manual fix done as shader override for orbs.
 
 Jak & Daxter
 Disable regex 2 and 3.
@@ -71,7 +74,7 @@ Interlacing (if you don't use progressive scan): Bob tff
 Internal resolution (if you don't use progressive scan): use a custom resolution with very high vertical resolution, at least
 almost double of what corresponds to a 16:9 resolution. The game won't be 3D otherwise.
 Note: menus are convergence dependant, but not to an unplayable amount.
-Note 2: it needs shaderoverrides for the blur filter (regex 3) and shadows (regex 1).
+Note 2: it needs shaderoverrides for the blur filter (regex 3) and shadows (regex 1). Manual fix done as shader override.
 
 Kingdom Hearts
 Disable regex 2 and 3.
@@ -96,7 +99,7 @@ Disable regex 3.
 
 Persona 4
 Note: character shadows pixel shaders needs to not be stereoized in regex 1. Needs manual fix.
-Note 2: ghosting is only perfect at 63.5 convergence. It needs to be not stereoized in regex 1, or disabled.
+Note 2: ghosting is only perfect at 63.5 convergence. It needs to be not stereoized in regex 1, or disabled. Manual fix done as shader override.
 Note 3: convergence dependant HUD, but not too annoying.
 Note 4: the game switches between two convergence levels every few seconds. It looks like it's changing the z buffer.
 
@@ -104,25 +107,25 @@ Ratchet & Clank
 Disable regex 2 and 3.
 Mipmapping: Basic
 Half-pixel Offset: Special (Texture - aggressive)
-Note: skybox is at screen depth. Needs manual fix in regex 1.
+Note: skybox is at screen depth. Needs manual fix in regex 1. Manual fix done as shader override.
 
 Ratchet & Clank 2
 Disable regex 2 and 3.
 Mipmapping: Basic
 Half-pixel Offset: Special (Texture - aggressive)
-Note: skybox is at screen depth. Needs manual fix in regex 1.
+Note: skybox is at screen depth. Needs manual fix in regex 1. Manual fix done as shader override.
 
 Ratchet & Clank 3
 Disable regex 2 and 3.
 Mipmapping: Basic or Automatic
 Half-pixel Offset: Special (Texture - aggressive)
-Note: skybox is at screen depth. Needs manual fix in regex 1.
+Note: skybox is at screen depth. Needs manual fix in regex 1. Manual fix done as shader override.
 
 Ratchet Deadlocked
 Disable regex 2 and 3.
 Mipmapping: Basic or Automatic
 Half-pixel Offset: Special (Texture - aggressive)
-Note: skybox is at screen depth. Needs manual fix in regex 1.
+Note: skybox is at screen depth. Needs manual fix in regex 1. Manual fix done as shader override.
 
 Rogue Galaxy
 Disable regex 3.
@@ -156,7 +159,7 @@ Soul Calibur III
 Disable regex 3.
 Align Sprite
 Half-pixel Offset: Special (Texture - aggressive)
-Note: regex 2 fixes part of the HUD, but regex 1 needs a manual fix for the text. Also, the character
+Note: regex 2 fixes part of the HUD, but regex 1 needs a manual fix for the text (manual fix done as shader override). Also, the character
 select screen is convergence dependant. Using left or right eye views can be a workaround for these issues.
 
 Star Ocean 3
@@ -164,12 +167,12 @@ Disable regex 2 and 3.
 Interlacing (if you don't use progressive scan): Bob tff
 Internal resolution (if you don't use progressive scan): use a custom resolution with very high vertical resolution, at least
 almost double of what corresponds to a 16:9 resolution. The game won't be 3D otherwise.
-Note: menus are convergence dependant. They need a manual fix.
+Note: menus are convergence dependant. They need a manual fix. Manual fix done as shader override, partially because of conflicts.
 Note 2: disabling regex 2 fixes some HUD things, but makes some small shadows 2D.
 
 Tales of the Abyss
 Half-pixel Offset: Special (Texture - aggressive)
-Note: bloom effect needs to not be stereoized, or disabled. When stereoized, it's OK at 63.5 convergence.
+Note: bloom effect needs to not be stereoized, or disabled. When stereoized, it's OK at 63.5 convergence. Manual fix done as shader override.
 Note 2: the HUD (regex 1 and 2) is convergence dependant.
 
 Tekken 5
@@ -188,8 +191,8 @@ Ys IV
 Interlacing: Bob tff
 Internal resolution: use a custom resolution with very high vertical resolution, at least
 almost double of what corresponds to a 16:9 resolution. The game won't be 3D otherwise.
-Note: the HUD needs dominant eye.
+Note: the HUD needs dominant eye. Manual fix done as shader override, partially.
 
 Ys V
 Interlacing: Bob tff
-Note: most of the HUD needs to be unstereoized.
+Note: most of the HUD needs to be unstereoized. Manual fix done as shader override, mostly.
