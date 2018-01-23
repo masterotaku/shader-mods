@@ -68,6 +68,10 @@ God of War 2
 Half-pixel Offset: Special (Texture - aggressive)
 Note: needs special convergence/separation presets with "g" key. Manual fix done as shader override for orbs.
 
+ICO
+Disable regex 3 and enable the "[ShaderOverrideYsV_20]" override.
+If you want to redluce the blurring effect of the game, uncomment and disable the "[ShaderOverrideSSH_2]" override.
+
 Jak & Daxter
 Disable regex 2 and 3.
 Interlacing (if you don't use progressive scan): Bob tff
